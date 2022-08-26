@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1170">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Stick+No+Bills:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="is-home">
+    <svg style="display: none;">
+    <symbol id="out" viewBox="0 0 14 14">
+        <g>
+            <path d="M5.24998 1.16663H10.5C11.1416 1.16663 11.6666 1.69163 11.6666 2.33329V11.6666C11.6666 12.3083 11.1416 12.8333 10.5 12.8333H5.24998C4.60831 12.8333 4.08331 12.3083 4.08331 11.6666V10.5H5.24998V11.6666H10.5V2.33329H5.24998V3.49996H4.08331V2.33329C4.08331 1.69163 4.60831 1.16663 5.24998 1.16663Z" fill="#969696"/>
+            <path d="M5.88583 9.09421L6.70833 9.91671L9.625 7.00004L6.70833 4.08337L5.88583 4.90587L7.39083 6.41671H1.75V7.58337H7.39083L5.88583 9.09421Z"/>
+        </g>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 16 16">
+        <g>
+            <path d="M11.6 14.6667C8.8782 14.6631 6.26889 13.5803 4.34428 11.6557C2.41967 9.73112 1.33687 7.1218 1.33334 4.39999C1.33334 3.58666 1.65644 2.80665 2.23155 2.23153C2.80666 1.65642 3.58668 1.33333 4.40001 1.33333C4.57224 1.33202 4.74418 1.34765 4.91334 1.37999C5.07688 1.4042 5.23765 1.44439 5.39334 1.49999C5.50284 1.53841 5.60042 1.60475 5.67642 1.69244C5.75242 1.78014 5.80421 1.88615 5.82668 1.99999L6.74001 5.99999C6.76463 6.10857 6.76166 6.22158 6.73139 6.32872C6.70111 6.43585 6.64448 6.5337 6.56668 6.61333C6.48001 6.70666 6.47334 6.71333 5.65334 7.13999C6.31001 8.58057 7.46214 9.73743 8.90001 10.4C9.33334 9.57333 9.34001 9.56666 9.43334 9.47999C9.51297 9.40219 9.61082 9.34556 9.71795 9.31528C9.82509 9.28501 9.9381 9.28204 10.0467 9.30666L14.0467 10.22C14.1569 10.2456 14.2588 10.2988 14.3427 10.3746C14.4267 10.4504 14.49 10.5463 14.5267 10.6533C14.5829 10.8116 14.6253 10.9744 14.6533 11.14C14.6802 11.3075 14.6936 11.477 14.6933 11.6467C14.6811 12.4565 14.3489 13.2286 13.7693 13.7944C13.1898 14.3602 12.4099 14.6738 11.6 14.6667ZM4.40001 2.66666C3.94084 2.66842 3.50098 2.8516 3.1763 3.17628C2.85162 3.50097 2.66843 3.94083 2.66668 4.39999C2.66844 6.76872 3.6102 9.03992 5.28514 10.7149C6.96008 12.3898 9.23128 13.3316 11.6 13.3333C12.0592 13.3316 12.499 13.1484 12.8237 12.8237C13.1484 12.499 13.3316 12.0592 13.3333 11.6V11.38L10.24 10.6667L10.0467 11.0333C9.74668 11.6133 9.52668 12.0333 8.96668 11.8067C7.86193 11.4112 6.85914 10.7747 6.03117 9.94325C5.20319 9.11181 4.57083 8.10638 4.18001 6.99999C3.94001 6.47999 4.39334 6.23999 4.96668 5.93999L5.33334 5.75999L4.62001 2.66666H4.40001Z"/>
+        </g>
+    </symbol>
+    <symbol id="card" viewBox="0 0 22 22">
+        <g>
+            <path d="M20.0035 6.81175C19.9192 6.6899 19.8066 6.59031 19.6753 6.5215C19.5441 6.45269 19.3982 6.41672 19.25 6.41667H6.7219L5.66406 3.8775C5.52536 3.54312 5.29049 3.25746 4.98924 3.05673C4.68798 2.856 4.3339 2.74925 3.9719 2.75H1.83331V4.58334H3.9719L8.32056 15.0196C8.39022 15.1866 8.50772 15.3292 8.65828 15.4295C8.80884 15.5298 8.98572 15.5834 9.16665 15.5833H16.5C16.8822 15.5833 17.2241 15.3459 17.3589 14.9893L20.1089 7.656C20.1609 7.51724 20.1784 7.36794 20.1601 7.22091C20.1417 7.07387 20.088 6.93348 20.0035 6.81175ZM15.8647 13.75H9.77806L7.4864 8.25H17.9272L15.8647 13.75Z"/>
+            <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z"/>
+            <path d="M16.0417 19.25C16.8011 19.25 17.4167 18.6344 17.4167 17.875C17.4167 17.1156 16.8011 16.5 16.0417 16.5C15.2823 16.5 14.6667 17.1156 14.6667 17.875C14.6667 18.6344 15.2823 19.25 16.0417 19.25Z"/>
+        </g>
+    </symbol>
+    <symbol id="search" viewBox="0 0 22 22">
+        <g>
+            <path d="M19.25 17.4166L14.5255 12.6921C15.3989 11.3647 15.7488 9.76041 15.5073 8.18987C15.2658 6.61933 14.4501 5.19425 13.2182 4.19055C11.9864 3.18686 10.4259 2.67594 8.83895 2.75672C7.252 2.83749 5.75147 3.50422 4.62788 4.62782C3.50428 5.75141 2.83755 7.25194 2.75678 8.83889C2.676 10.4258 3.18692 11.9863 4.19061 13.2182C5.19431 14.4501 6.61939 15.2657 8.18993 15.5072C9.76047 15.7487 11.3648 15.3989 12.6922 14.5255L17.4167 19.25L19.25 17.4166ZM4.58335 9.16663C4.58335 6.63938 6.63944 4.58329 9.16669 4.58329C11.6939 4.58329 13.75 6.63938 13.75 9.16663C13.75 11.6939 11.6939 13.75 9.16669 13.75C6.63944 13.75 4.58335 11.6939 4.58335 9.16663Z"/>
+        </g>
+    </symbol>
+    
+</svg>
+
+    <div class="page-wrapper" id="pageWrapper">
+        <header class="header">
+    <div class="header__con">
+        <div class="container ">
+            <div class="row">
+                    <div class="col-lg-9 col-sm-5"> 
+                        <ul class="contact">
+                            <svg class="icon"><use xlink:href="#phone"></use></svg>
+                            <li class="contact__item hover"> 8 (812) 123-45-67</li>
+                            <li class="contact__item">Работаем 7 дней в неделю</li>
+                            <li class="contact__item">9:00 — 18:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-5 log-in">
+                            <svg class="icon-out"><use xlink:href="#out"></use></svg>
+                            <a href="#" class="log">Войти</a>
+                            <a href="#" class="log">Регистрация</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__down">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#" class="logo">PORTEN</a>
+                </div>
+                <div class="col-lg-8 nav">
+                        <ul class="nav__wrap">
+                            <li ><a class="nav__item" href="#">Понравилось</a></li>
+                            <li ><a class="nav__item" href="#">Личный кибинет</a></li>
+                            <li ><a class="nav__item" href="#">Настройки</a></li>
+                        </ul>
+                        <div class="nav__icon-List">
+                            <svg class="nav__icon"><use xlink:href="#card"></use></svg>
+                            <svg class="nav__icon"><use xlink:href="#search"></use></svg>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        
+    <div class="banner">
+        <div class="container banner__wrap">
+            <div class="banner__logo">
+                 <p class="logo logo--border">PORTEN</p> 
+                 <p class="city">санкт-петербург</p>
+            </div>
+            <div class="banner__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</div>
+        </div>
+    </div>
+    <div class="season">
+        <div class="season-left">
+                <div class="season__header">СЕЗОН 2020/21</div>
+                <div class="season__cards">
+                    <div class="season__card">
+                        <div class="season__img ">
+                            <img class="season__img-item" src="assets/img/watch.png" alt="">
+                        </div>   
+                        <div class="season__name">Louis XVI ATHOS</div>
+                        <div class="season__price">165 000 руб.</div>
+
+                    </div>
+                    <div class="season__card">
+                        <div class="season__img">
+                            <img class="season__img-item" src="assets/img/watch.png" alt="">
+                        </div>
+                        <div class="season__name">Louis XVI ATHOS</div>
+                        <div class="season__price">165 000 руб.</div>
+                    </div>
+                    <div class="season__card">
+                        <div class="season__img">
+                            <img class="season__img-item" src="assets/img/watch.png" alt="">
+                        </div>
+                        <div class="season__name">Louis XVI ATHOS</div>
+                        <div class="season__price">165 000 руб.</div>
+                    </div>
+                </div>
+        </div>
+        <div class="season-right">
+            <div class="season-right-content">
+                <div class="season__header-right">Новая коллекция</div>
+                <button class="season__button">каталог</button>
+            </div>
+        </div>
+    </div>
+    <div class="coletion">
+        <img class="coletion__img" src="assets/img/costum.png" alt="">
+        <div class="new-coliction">
+            <h2 class="new-coliction__header">КОЛЛЕКЦИЯ 2018</h2>
+            <p class="new-coliction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
+            <button class="new-coliction__btn">посмотреть коллекцию</button>
+        </div>
+    </div>
+    <div class="product">
+        <div class="container">
+            <h2 class="product__wrap">новые поступления</h2>
+            <div class="products">          
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__img ">
+                        <img class="season__img-item" src="assets/img/watch.png" alt="">
+                    </div>   
+                    <div class="season__name">Louis XVI ATHOS</div>
+                    <div class="season__price">165 000 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand">
+        <div class="container">
+            <h2 class="brand__wrap">наши бренды</h2>
+            <div class="brand__logo">
+                <img src="./assets/img/Rectangle 2.png" alt="" class="barnd__item">
+                <img src="./assets/img/Rectangle 2.png" alt="" class="barnd__item">
+                <img src="./assets/img/Rectangle 2.png" alt="" class="barnd__item">
+                <img src="./assets/img/Rectangle 2.png" alt="" class="barnd__item">
+            </div>
+        </div>
+    </div>
+
+
+        <footer class="footer">
+    <div class="footer__content">
+        <div class="container">
+            <div class="row">
+                <div class="shop col-lg-4">
+                    <h2 class="shop__wrap">О магазине</h2>
+                    <p class="shop__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+                    </p>
+                </div>
+                <div class="categories col-lg-4">
+                    <h2 class="categories__wrap">Категории</h2>
+                    <div class="categories__list">
+                        <a href="#" class="categories__item item1">Часы</a>
+                        <a href="#" class="categories__item item2">Браслеты</a>
+                        <a href="#" class="categories__item item3">Ремни</a>
+                        <a href="#" class="categories__item item4">Ювелирные изделия</a>
+                        <a href="#" class="categories__item item5">Запонки</a>
+                    </div>
+                </div>
+                <div class="mailing col-lg-4">
+                    <h2 class="mailing__wrap">Расслыка</h2>
+                    <p class="mailing__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="info">
+            <div class="info__wrap container">
+                <p class="info__right">© 2020 Все права защищены</p>
+                <a class="info__left" href="#">Сделано Figma.info</a>
+            </div>
+        </div>
+</footer>
+    </div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>
